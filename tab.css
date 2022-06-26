@@ -12,7 +12,7 @@ html {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     font-family: 'League Spartan', sans-serif;
-    font-size: 175%;
+    font-size: 275%;
 }
 #land {
     margin: 0;
@@ -23,33 +23,46 @@ html {
     font-family: 'League Spartan', sans-serif;
     font-size: 175%;
 }
-@media screen and (max-width: 1450px) {
+@media (max-width: 412px) {
     html{
-        background-color: #19ffe0;
+        background-color: #ff0000;
     }
     #text {
-        font-size: 20%;
-    }
-    #land {
-        font-size: 100%;
-    }
-}
-@media screen and (max-width: 450px) {
-    #text {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-        font-size: 100%;
-    }
-    #land {
         margin: 0;
         position: absolute;
         top: 50%;
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
         font-size: 30%;
+    }
+    #land {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-size: 10%;
+    }
+}
+@media (max-width: 450px) {
+    html{
+        background-color: #19ffe0;
+    }
+    #text {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-size: 20%;
+    }
+    #land {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-size: 100%;
     }
 }
     
@@ -74,7 +87,6 @@ html {
 
   section {
     border-bottom: 1px solid rgb(0, 0, 0);
-    padding: 1rem;
     height: 100vh;
     scroll-snap-align: start;
     text-align: center;

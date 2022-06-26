@@ -1,0 +1,49 @@
+html {
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+}
+
+#landing {
+    margin: 0;
+    position: absolute;
+    text-align: left;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-family: 'League Spartan', sans-serif;
+    font-size: 30vh;
+}
+
+#bio {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-family: 'League Spartan', sans-serif;
+    font-size: 275%;
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+    text-align: center;
+    position: relative;
+}
+
+button {
+    position: fixed;
+    right: 0;
+    /* left: auto; */
+    border: none;
+    padding: 10px;
+    padding-top: fit-content;
+    padding-bottom: fit-content;
+    font-size: 50px;
+    font-family: 'League Spartan', sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+}
