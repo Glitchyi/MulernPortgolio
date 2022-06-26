@@ -4,92 +4,47 @@ html {
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
-  }
-#text {
+}
+
+#landing {
+    margin: 0;
+    position: absolute;
+    text-align: left;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-family: 'League Spartan', sans-serif;
+    font-size: 30vh;
+    padding: 10vh;
+}
+
+#bio {
     margin: 0;
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     font-family: 'League Spartan', sans-serif;
-    font-size: 275%;
-}
-#land {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    font-family: 'League Spartan', sans-serif;
-    font-size: 175%;
-}
-@media (max-width: 412px) {
-    html{
-        background-color: #ff0000;
-    }
-    #text {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-        font-size: 30%;
-    }
-    #land {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-        font-size: 10%;
-    }
-}
-@media (max-width: 450px) {
-    html{
-        background-color: #19ffe0;
-    }
-    #text {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-        font-size: 20%;
-    }
-    #land {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-        font-size: 100%;
-    }
-}
-    
-
-#p1 {
-    font-family: 'League Spartan', sans-serif;
-    font-size: 130px;
-    padding-left: 10%;
-    padding-right: 10%;
+    font-size: 4vh;
 }
 
-#Prof {
-    padding-left: 10%;
-    max-width: 12%;
-    max-height: 12%;
-}
-
-
-* {
-    box-sizing: border-box;
-  }
-
-  section {
-    border-bottom: 1px solid rgb(0, 0, 0);
-    
+section {
     height: 100vh;
     scroll-snap-align: start;
-    text-align: center;
     position: relative;
-  }
+    
+}
+
+button {
+    position: fixed;
+    right: 0;
+    /* left: auto; */
+    border: none;
+    padding: 10px;
+    padding-top: fit-content;
+    padding-bottom: fit-content;
+    font-size: 50px;
+    font-family: 'League Spartan', sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+}
