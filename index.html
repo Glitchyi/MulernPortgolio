@@ -1,57 +1,107 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="/styles.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
-    <head>
-        <title>:)</title>
-        <meta charset="UTF-8">
-        <meta name="description" content="Helo There!">
-        <meta name="keywords" content="HTML, CSS, JavaScript">
-        <meta name="author" content="Advaith Narayanan (Glitchy)">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      </head>
-      <style>
-        h2{
-            font-family: 'League Spartan', sans-serif;
-            font-size: 10%;
-            padding-left: 10%;
-            padding-right: 10%;
-        }
-        #p1{
-            font-family: 'League Spartan', sans-serif;
-            font-size: 130px;
-            padding-left: 10%;
-            padding-right: 10%;
-        }
-        #Prof{
-            padding-left: 10%;
-            max-width: 12%;
-            max-height: 12%;
-        }
-      </style>
-      <body>
-          <div id="Nav"></div>
-          <div id="Landing">
-              <hr>
-              <div id="p1">
-                <h1>Advaith<img id="Prof" src="assets/mainPic.JPG" alt="">Narayanan </h1>
-                
-              </div>
-              <h2>An average techie who really enjoy learning new skills and is overcurious in almost every topic he stumbles upon.
-                Quiet familiar in C, C++, Python, JS, Git/Concept of VCS, HTML, CSS, Bash & Batch Scripting.
-                Some of my other skills include:
-                - Knowledge of the Adobe Suite of products. (viz. Photoshop, Premiere Pro, Acrobat Pro & Indesign)
-                - Know-how in creatively using open-source programs like Blender, Audacity, and OBS.
-    
-                Must know about me section:
-                - A Windows, macOS, Linux (Debian & Arch) user
-                - VSCode is the preferred primary editor
-                - Very much interested in networking and am familiar with using type-2 hypervisors
-                - WSL Fanboy, Used Arch the proper way :), a Gnome & Debian (Ubu0000000000tu) enthusiast 
-                - Aspiring game dev, a self-taught music composer, amateur photographer</h2>
-              <hr>
-          </div>
-      </body>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+
+<head>
+  <title>:)</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Helo There!">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Advaith Narayanan (Glitchy)">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    // Add smooth scrolling to all links
+    $("a").on('click', function (event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function () {
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+</script>
+
+<script>
+
+  const gra = function (min, max) {
+    return Math.random() * (max - min) + min;
+  }
+  const init = function () {
+    let items = document.querySelectorAll('section');
+    for (let i = 0; i < items.length; i++) {
+      items[i].style.background = randomColor({ luminosity: 'light' });
+    }
+    cssScrollSnapPolyfill()
+  }
+  init();
+
+</script>
+
+
+
+<nav><button onclick="window.location='about.html';">contact</button></nav>
+
+<body>
+  <div id="Nav"></div>
+  <div id="Landing">
+    <hr>
+    <div id="p1">
+      <section>
+        <h2 id="land">Advaith<img id="Prof" src="assets/mainPic.JPG" alt="">Narayanan</h2>
+      </section>
+
+    </div>
+
+
+    <div>
+
+      <section>
+
+        <h2 id="text">An average techie who really enjoy learning new skills and is overcurious in almost every topic he stumbles
+          upon.
+          Quiet familiar in C, C++, Python, JS, Git/Concept of VCS, HTML, CSS, Bash & Batch Scripting.
+          Some of my other skills include:
+          - Knowledge of the Adobe Suite of products. (viz. Photoshop, Premiere Pro, Acrobat Pro & Indesign)
+          - Know-how in creatively using open-source programs like Blender, Audacity, and OBS.
+
+          Must know about me section:
+          - A Windows, macOS, Linux (Debian & Arch) user
+          - VSCode is the preferred primary editor
+          - Very much interested in networking and am familiar with using type-2 hypervisors
+          - WSL Fanboy, Used Arch the proper way :), a Gnome & Debian enthusiast
+          - Aspiring game dev, a self-taught music composer, amateur photographer</h2>
+        <hr>
+    </div>
+    </section>
+
+
+
+
+
+</body>
+
 </html>
