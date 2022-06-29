@@ -36,10 +36,7 @@ section {
     
 }
 
-button {
-    position: fixed;
-    right: 0;
-    /* left: auto; */
+#info {
     border: none;
     padding: 10px;
     padding-top: fit-content;
@@ -48,4 +45,7 @@ button {
     font-family: 'League Spartan', sans-serif;
     border-radius: 10px;
     cursor: pointer;
+}
+#links{
+padding: 30vh;
 }
